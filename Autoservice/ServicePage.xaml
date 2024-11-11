@@ -9,6 +9,6 @@
       Title="ServicePage">
 
     <Grid>
-        <Button Content="Вперfdddgед" Click="Button_Click"></Button>
+        <Button Content="Вперед" Click="Button_Click"></Button>
     </Grid>
 </Page>
