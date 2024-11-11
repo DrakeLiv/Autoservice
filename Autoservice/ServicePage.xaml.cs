@@ -23,6 +23,10 @@ namespace Autoservice
         public ServicePage()
         {
             InitializeComponent();
+
+            var currentServices = DBAutoserviceEntities.GetContext().Service.ToList();  
+
+            ServiceListView.ItemsSource = currentServices;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
