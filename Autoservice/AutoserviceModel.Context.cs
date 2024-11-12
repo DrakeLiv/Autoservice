@@ -12,7 +12,7 @@ namespace Autoservice
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class DBAutoserviceEntities : DbContext
     {
         private static DBAutoserviceEntities _context;
@@ -27,12 +27,12 @@ namespace Autoservice
             : base("name=DBAutoserviceEntities")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
         public virtual DbSet<Client> Client { get; set; }
         public virtual DbSet<ClientService> ClientService { get; set; }
         public virtual DbSet<DocumentByService> DocumentByService { get; set; }
