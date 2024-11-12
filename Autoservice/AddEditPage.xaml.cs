@@ -44,7 +44,7 @@ namespace Autoservice
                 errors.AppendLine("Укажите стоимость услуги");
 
 
-            if ((_currentServise.Discount == 0))
+            if (_currentServise.DiscountInt >= 100)
                 errors.AppendLine("Укажите скидку");
 
             if (string.IsNullOrWhiteSpace(_currentServise.Duration))
